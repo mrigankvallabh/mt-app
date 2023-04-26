@@ -24,6 +24,8 @@ import { MatSortModule } from '@angular/material/sort';
 import { NgDashboardComponent } from './ng-dashboard/ng-dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
+import { NgTreeComponent } from './ng-tree/ng-tree.component';
+import { MatTreeModule } from '@angular/material/tree';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { MatMenuModule } from '@angular/material/menu';
     NgAddressFormComponent,
     NgNavigationComponent,
     NgTableComponent,
-    NgDashboardComponent
+    NgDashboardComponent,
+    NgTreeComponent
   ],
   imports: [
     BrowserModule,
@@ -53,6 +56,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatSortModule,
     MatGridListModule,
     MatMenuModule,
+    MatTreeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
