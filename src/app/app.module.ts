@@ -26,6 +26,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 import { NgTreeComponent } from './ng-tree/ng-tree.component';
 import { MatTreeModule } from '@angular/material/tree';
+import { NgDragDropComponent } from './ng-drag-drop/ng-drag-drop.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { MatTreeModule } from '@angular/material/tree';
     NgNavigationComponent,
     NgTableComponent,
     NgDashboardComponent,
-    NgTreeComponent
+    NgTreeComponent,
+    NgDragDropComponent
   ],
   imports: [
     BrowserModule,
@@ -57,6 +60,7 @@ import { MatTreeModule } from '@angular/material/tree';
     MatGridListModule,
     MatMenuModule,
     MatTreeModule,
+    DragDropModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
