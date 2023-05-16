@@ -28,6 +28,7 @@ import { NgTreeComponent } from './ng-tree/ng-tree.component';
 import { MatTreeModule } from '@angular/material/tree';
 import { NgDragDropComponent } from './ng-drag-drop/ng-drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { ExampleTelInput, TelFormFieldComponent } from './components/tel-form-field/tel-form-field.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,9 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     NgTableComponent,
     NgDashboardComponent,
     NgTreeComponent,
-    NgDragDropComponent
+    NgDragDropComponent,
+    TelFormFieldComponent,
+    ExampleTelInput,
   ],
   imports: [
     BrowserModule,

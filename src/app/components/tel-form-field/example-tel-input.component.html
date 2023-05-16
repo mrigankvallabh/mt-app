@@ -1,0 +1,21 @@
+<div role="group" class="example-tel-input-container"
+     [formGroup]="parts"
+     [attr.aria-labelledby]="_formField.getLabelId()"
+     (focusin)="onFocusIn($event)"
+     (focusout)="onFocusOut($event)">
+  <span class="example-tel-input-spacer">&plus;</span>
+  <input class="example-tel-input-element"
+         formControlName="isd" size="3"
+         maxLength="3"
+         aria-label="ISD code"
+         (input)="_handleInput(parts.controls.isd, telno)"
+         #isd>
+  <span class="example-tel-input-spacer">&ndash;</span>
+  <input class="example-tel-input-element"
+         formControlName="telno"
+         size="12"
+         aria-label="Telephone number"
+         (input)="_handleInput(parts.controls.telno)"
+         (keyup.backspace)="autoFocusPrev(parts.controls.telno, isd)"
+         #telno>
+</div>
