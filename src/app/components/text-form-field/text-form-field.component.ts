@@ -11,7 +11,7 @@ import { Component, Input } from '@angular/core';
   `,
   styles: [`
     :host {
-      display: inline-flex;
+      display: flex;
       margin-right: 1rem;
     }
   `]
