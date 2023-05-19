@@ -31,6 +31,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { ExampleTelInput, TelFormFieldComponent } from './components/tel-form-field/tel-form-field.component';
 import { TextFormFieldComponent } from './components/text-form-field/text-form-field.component';
 import { AutocompleteAutoActiveFirstOption, AutocompleteDisplay, AutocompleteFilter, AutocompleteOptgroup, AutocompleteOverview, AutocompletePlainInput } from './components/autocomplete/autocomplete.component';
+import { BadgeOverview } from './components/badge/badge.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { AutocompleteAutoActiveFirstOption, AutocompleteDisplay, AutocompleteFil
     AutocompleteFilter,
     AutocompleteOptgroup,
     AutocompleteOverview,
-    AutocompletePlainInput
+    AutocompletePlainInput,
+    BadgeOverview
   ],
   imports: [
     BrowserModule,
