@@ -32,6 +32,7 @@ import { ExampleTelInput, TelFormFieldComponent } from './components/tel-form-fi
 import { TextFormFieldComponent } from './components/text-form-field/text-form-field.component';
 import { AutocompleteAutoActiveFirstOption, AutocompleteDisplay, AutocompleteFilter, AutocompleteOptgroup, AutocompleteOverview, AutocompletePlainInput } from './components/autocomplete/autocomplete.component';
 import { BadgeOverview } from './components/badge/badge.component';
+import { BottomSheetOverview, BottomSheetOverviewSheet } from './components/bottom-sheet/bottom-sheet.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,9 @@ import { BadgeOverview } from './components/badge/badge.component';
     AutocompleteOptgroup,
     AutocompleteOverview,
     AutocompletePlainInput,
-    BadgeOverview
+    BadgeOverview,
+    BottomSheetOverview,
+    BottomSheetOverviewSheet
   ],
   imports: [
     BrowserModule,
