@@ -288,3 +288,144 @@ export class AutocompleteOptgroup implements OnInit {
     return names.filter(item => item.toLowerCase().includes(filterValue));
   }
 }
+
+export interface State {
+  flag: string;
+  name: string;
+  population: string;
+}
+
+@Component({
+  selector: 'autocomplete-overview',
+  template: `
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>State</mat-label>
+        <input type="text" matInput [matAutocomplete]="auto" [formControl]="stateCtrl" />
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let state of filteredStates | async" [value]="state.name">
+            <img [src]="state.flag" height="25" class="example-option-img">
+            <span>{{ state.name }}</span> | 
+            <small>Population: {{ state.population }}</small>
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      <hr>
+      <mat-slide-toggle [checked]="stateCtrl.disabled" (change)="stateCtrl.disabled ? stateCtrl.enable() : stateCtrl.disable()">
+        Disable Input?
+      </mat-slide-toggle>
+    </form>
+  `,
+  styles: [`
+    .example-form {
+      min-width: 150px;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .example-full-width {
+      width: 100%;
+    }
+
+    .example-option-img {
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    [dir='rtl'] .example-option-img {
+      margin-right: 0;
+      margin-left: 8px;
+    }
+  `]
+})
+export class AutocompleteOverview implements OnInit {
+  states: State[] = [
+    {
+      name: 'Arkansas',
+      population: '2.978M',
+      flag: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Arkansas.svg',
+    },
+    {
+      name: 'California',
+      population: '39.14M',
+      flag: 'https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg',
+    },
+    {
+      name: 'Florida',
+      population: '20.27M',
+      flag: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Florida.svg',
+    },
+    {
+      name: 'Texas',
+      population: '27.47M',
+      flag: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Texas.svg',
+    },
+  ];
+  stateCtrl = new FormControl("");
+  filteredStates!: Observable<State[]>;
+
+  constructor() { }
+
+  ngOnInit(): void {
+    this.filteredStates = this.stateCtrl.valueChanges.pipe(
+      startWith(""),
+      map(state => ( state ? this._filterStates(state) : this.states.slice() ))
+    );
+  }
+
+  private _filterStates(value: string): State[] {
+    const filterValue = value.toLowerCase();
+
+    return this.states.filter(state => state.name.toLowerCase().includes(filterValue));
+  }
+
+}
+
+@Component({
+  selector: 'autocomplete-plain-input',
+  template: `
+    <form class="example-form">
+      <input type="text" [matAutocomplete]="auto" [formControl]="control" class="example-input" />
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let st of filteredStreets | async" [value]="st">{{st}}</mat-option>
+      </mat-autocomplete>
+    </form>
+  `,
+  styles: [`
+    .example-form {
+      min-width: 150px;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .example-full-width {
+      width: 100%;
+    }
+
+    .example-input {
+      max-width: 100%;
+      width: 300px;
+    }
+  `]
+})
+export class AutocompletePlainInput implements OnInit {
+  control = new FormControl("");
+  streets: string[] = [ 'Champs-Élysées', 'Lombard Street', 'Abbey Road', 'Fifth Avenue' ];
+  filteredStreets!: Observable<string[]>;
+
+  ngOnInit(): void {
+    this.filteredStreets = this.control.valueChanges.pipe(
+      startWith(""),
+      map(v => this._filter(v || ""))
+    );
+  }
+
+  private _filter(value: string): string[] {
+    const filterValue = this._normalizeValue(value);
+    return this.streets.filter(street => this._normalizeValue(street).includes(filterValue));
+  }
+
+  private _normalizeValue(value: string): string {
+    return value.toLowerCase().replace(/\s/g, '');
+  }
+}
