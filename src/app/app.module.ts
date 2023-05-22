@@ -33,6 +33,7 @@ import { TextFormFieldComponent } from './components/text-form-field/text-form-f
 import { AutocompleteAutoActiveFirstOption, AutocompleteDisplay, AutocompleteFilter, AutocompleteOptgroup, AutocompleteOverview, AutocompletePlainInput } from './components/autocomplete/autocomplete.component';
 import { BadgeOverview } from './components/badge/badge.component';
 import { BottomSheetOverview, BottomSheetOverviewSheet } from './components/bottom-sheet/bottom-sheet.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { BottomSheetOverview, BottomSheetOverviewSheet } from './components/bott
     AutocompletePlainInput,
     BadgeOverview,
     BottomSheetOverview,
-    BottomSheetOverviewSheet
+    BottomSheetOverviewSheet,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
