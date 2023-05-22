@@ -35,6 +35,7 @@ import { BadgeOverview } from './components/badge/badge.component';
 import { BottomSheetOverview, BottomSheetOverviewSheet } from './components/bottom-sheet/bottom-sheet.component';
 import { ButtonComponent } from './components/button/button.component';
 import { ButtonToggleAppearance, ButtonToggleExclusiveSelection, ButtonToggleFormSelection } from './components/button-toggle/button-toggle.component';
+import { CardOverview } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { ButtonToggleAppearance, ButtonToggleExclusiveSelection, ButtonToggleFor
     ButtonComponent,
     ButtonToggleAppearance,
     ButtonToggleExclusiveSelection,
-    ButtonToggleFormSelection
+    ButtonToggleFormSelection,
+    CardOverview
   ],
   imports: [
     BrowserModule,
