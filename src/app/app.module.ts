@@ -10,7 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgNavigationComponent } from './ng-navigation/ng-navigation.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -34,6 +34,7 @@ import { AutocompleteAutoActiveFirstOption, AutocompleteDisplay, AutocompleteFil
 import { BadgeOverview } from './components/badge/badge.component';
 import { BottomSheetOverview, BottomSheetOverviewSheet } from './components/bottom-sheet/bottom-sheet.component';
 import { ButtonComponent } from './components/button/button.component';
+import { ButtonToggleAppearance, ButtonToggleExclusiveSelection, ButtonToggleFormSelection } from './components/button-toggle/button-toggle.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,10 @@ import { ButtonComponent } from './components/button/button.component';
     BadgeOverview,
     BottomSheetOverview,
     BottomSheetOverviewSheet,
-    ButtonComponent
+    ButtonComponent,
+    ButtonToggleAppearance,
+    ButtonToggleExclusiveSelection,
+    ButtonToggleFormSelection
   ],
   imports: [
     BrowserModule,
@@ -67,6 +71,7 @@ import { ButtonComponent } from './components/button/button.component';
     MatSelectModule,
     MatRadioModule,
     MatCardModule,
+    FormsModule,
     ReactiveFormsModule,
     LayoutModule,
     MatToolbarModule,
