@@ -36,6 +36,7 @@ import { BottomSheetOverview, BottomSheetOverviewSheet } from './components/bott
 import { ButtonComponent } from './components/button/button.component';
 import { ButtonToggleAppearance, ButtonToggleExclusiveSelection, ButtonToggleFormSelection } from './components/button-toggle/button-toggle.component';
 import { CardOverview } from './components/card/card.component';
+import { CheckboxOverview } from './components/checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { CardOverview } from './components/card/card.component';
     ButtonToggleAppearance,
     ButtonToggleExclusiveSelection,
     ButtonToggleFormSelection,
-    CardOverview
+    CardOverview,
+    CheckboxOverview
   ],
   imports: [
     BrowserModule,
