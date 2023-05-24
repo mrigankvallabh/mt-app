@@ -37,6 +37,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { ButtonToggleAppearance, ButtonToggleExclusiveSelection, ButtonToggleFormSelection } from './components/button-toggle/button-toggle.component';
 import { CardOverview } from './components/card/card.component';
 import { CheckboxOverview } from './components/checkbox/checkbox.component';
+import { ChipsBasic, ChipsComponent, ChipsDragDrop, ChipsFormControl } from './components/chips/chips.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,11 @@ import { CheckboxOverview } from './components/checkbox/checkbox.component';
     ButtonToggleExclusiveSelection,
     ButtonToggleFormSelection,
     CardOverview,
-    CheckboxOverview
+    CheckboxOverview,
+    ChipsComponent,
+    ChipsBasic,
+    ChipsFormControl,
+    ChipsDragDrop
   ],
   imports: [
     BrowserModule,
