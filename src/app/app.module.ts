@@ -40,6 +40,7 @@ import { CheckboxOverview } from './components/checkbox/checkbox.component';
 import { ChipsBasic, ChipsDragDrop, ChipsFormControl } from './components/chips/chips.component';
 import { DateRangePickerComparison } from './components/date-picker/date-picker.component';
 import { DialogComponent } from './components/dialog/dialog.component';
+import { DividerOverview } from './components/divider/divider.component';
 
 @NgModule({
   declarations: [
@@ -72,6 +73,7 @@ import { DialogComponent } from './components/dialog/dialog.component';
     ChipsFormControl,
     ChipsDragDrop,
     DateRangePickerComparison,
+    DividerOverview,
   ],
   imports: [
     BrowserModule,
