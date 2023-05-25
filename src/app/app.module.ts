@@ -41,6 +41,7 @@ import { ChipsBasic, ChipsDragDrop, ChipsFormControl } from './components/chips/
 import { DateRangePickerComparison } from './components/date-picker/date-picker.component';
 import { DialogComponent } from './components/dialog/dialog.component';
 import { DividerOverview } from './components/divider/divider.component';
+import { ExpansionPanelOverview } from './components/expansion-panel/expansion-panel.component';
 
 @NgModule({
   declarations: [
@@ -74,6 +75,7 @@ import { DividerOverview } from './components/divider/divider.component';
     ChipsDragDrop,
     DateRangePickerComparison,
     DividerOverview,
+    ExpansionPanelOverview,
   ],
   imports: [
     BrowserModule,
