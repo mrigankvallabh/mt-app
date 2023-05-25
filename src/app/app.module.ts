@@ -39,6 +39,7 @@ import { CardOverview } from './components/card/card.component';
 import { CheckboxOverview } from './components/checkbox/checkbox.component';
 import { ChipsBasic, ChipsDragDrop, ChipsFormControl } from './components/chips/chips.component';
 import { DateRangePickerComparison } from './components/date-picker/date-picker.component';
+import { DialogComponent } from './components/dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,7 @@ import { DateRangePickerComparison } from './components/date-picker/date-picker.
     ChipsBasic,
     ChipsFormControl,
     ChipsDragDrop,
-    DateRangePickerComparison
+    DateRangePickerComparison,
   ],
   imports: [
     BrowserModule,
@@ -95,6 +96,7 @@ import { DateRangePickerComparison } from './components/date-picker/date-picker.
     MatMenuModule,
     MatTreeModule,
     DragDropModule,
+    DialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
