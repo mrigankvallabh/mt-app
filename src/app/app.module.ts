@@ -42,6 +42,7 @@ import { DateRangePickerComparison } from './components/date-picker/date-picker.
 import { DialogComponent } from './components/dialog/dialog.component';
 import { DividerOverview } from './components/divider/divider.component';
 import { ExpansionPanelOverview } from './components/expansion-panel/expansion-panel.component';
+import { FormFieldOverview } from './components/form-field/form-field.component';
 
 @NgModule({
   declarations: [
@@ -76,6 +77,7 @@ import { ExpansionPanelOverview } from './components/expansion-panel/expansion-p
     DateRangePickerComparison,
     DividerOverview,
     ExpansionPanelOverview,
+    FormFieldOverview,
   ],
   imports: [
     BrowserModule,
