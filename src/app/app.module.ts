@@ -44,6 +44,7 @@ import { DividerOverview } from './components/divider/divider.component';
 import { ExpansionPanelOverview } from './components/expansion-panel/expansion-panel.component';
 import { FormFieldOverview } from './components/form-field/form-field.component';
 import { GridListComponent } from './components/grid-list/grid-list.component';
+import { InputComponent } from './components/input/input.component';
 
 @NgModule({
   declarations: [
@@ -80,6 +81,7 @@ import { GridListComponent } from './components/grid-list/grid-list.component';
     ExpansionPanelOverview,
     FormFieldOverview,
     GridListComponent,
+    InputComponent,
   ],
   imports: [
     BrowserModule,
