@@ -45,6 +45,7 @@ import { ExpansionPanelOverview } from './components/expansion-panel/expansion-p
 import { FormFieldOverview } from './components/form-field/form-field.component';
 import { GridListComponent } from './components/grid-list/grid-list.component';
 import { InputComponent } from './components/input/input.component';
+import { ListComponent } from './components/list/list.component';
 
 @NgModule({
   declarations: [
@@ -82,6 +83,7 @@ import { InputComponent } from './components/input/input.component';
     FormFieldOverview,
     GridListComponent,
     InputComponent,
+    ListComponent,
   ],
   imports: [
     BrowserModule,
