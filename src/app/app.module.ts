@@ -46,6 +46,7 @@ import { FormFieldOverview } from './components/form-field/form-field.component'
 import { GridListComponent } from './components/grid-list/grid-list.component';
 import { InputComponent } from './components/input/input.component';
 import { ListComponent } from './components/list/list.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -84,6 +85,7 @@ import { ListComponent } from './components/list/list.component';
     GridListComponent,
     InputComponent,
     ListComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
