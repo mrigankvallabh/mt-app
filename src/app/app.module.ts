@@ -47,6 +47,7 @@ import { GridListComponent } from './components/grid-list/grid-list.component';
 import { InputComponent } from './components/input/input.component';
 import { ListComponent } from './components/list/list.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { PaginatorComponent } from './components/paginator/paginator.component';
 
 @NgModule({
   declarations: [
@@ -86,6 +87,7 @@ import { MenuComponent } from './components/menu/menu.component';
     InputComponent,
     ListComponent,
     MenuComponent,
+    PaginatorComponent,
   ],
   imports: [
     BrowserModule,
