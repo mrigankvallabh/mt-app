@@ -49,6 +49,7 @@ import { ListComponent } from './components/list/list.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { PaginatorComponent } from './components/paginator/paginator.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
+import { ProgressSpinnerComponent } from './components/progress-spinner/progress-spinner.component';
 
 @NgModule({
   declarations: [
@@ -90,6 +91,7 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
     MenuComponent,
     PaginatorComponent,
     ProgressBarComponent,
+    ProgressSpinnerComponent,
   ],
   imports: [
     BrowserModule,
