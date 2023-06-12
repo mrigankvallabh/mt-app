@@ -48,6 +48,7 @@ import { InputComponent } from './components/input/input.component';
 import { ListComponent } from './components/list/list.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { PaginatorComponent } from './components/paginator/paginator.component';
+import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -88,6 +89,7 @@ import { PaginatorComponent } from './components/paginator/paginator.component';
     ListComponent,
     MenuComponent,
     PaginatorComponent,
+    ProgressBarComponent,
   ],
   imports: [
     BrowserModule,
