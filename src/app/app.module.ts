@@ -50,6 +50,9 @@ import { MenuComponent } from './components/menu/menu.component';
 import { PaginatorComponent } from './components/paginator/paginator.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { ProgressSpinnerComponent } from './components/progress-spinner/progress-spinner.component';
+import { RadioButtonComponent } from './components/radio-button/radio-button.component';
+import { RippleComponent } from './components/ripple/ripple.component';
+import { SelectBoxComponent } from './components/select-box/select-box.component';
 
 @NgModule({
   declarations: [
@@ -92,6 +95,9 @@ import { ProgressSpinnerComponent } from './components/progress-spinner/progress
     PaginatorComponent,
     ProgressBarComponent,
     ProgressSpinnerComponent,
+    RadioButtonComponent,
+    RippleComponent,
+    SelectBoxComponent,
   ],
   imports: [
     BrowserModule,
